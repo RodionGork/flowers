@@ -4,8 +4,7 @@ git checkout FETCH_HEAD
 git checkout -b gh-pages
 cp /tmp/src/* .
 git add -A
-t=(date +%s)
-git commit -m "Auto update $t"
+git commit -m "Auto update $(date +%s)"
 echo $KKK_SECRET | base64 --decode >/tmp/flower.pri.gz
 gunzip /tmp/flower.pri.gz
 chmod 600 /tmp/flower.pri
