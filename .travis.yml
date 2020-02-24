@@ -1,6 +1,12 @@
+language: bash
+
 env:
   global:
-    - TMPDIR=/tmp
+  - TMPDIR=/tmp
+
+branches:
+  only:
+  - master
 
 script:
   - bash deploy.sh
