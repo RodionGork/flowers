@@ -1,0 +1,6 @@
+env:
+  global:
+    - TMPDIR=/tmp
+
+script:
+  - bash deploy.sh
