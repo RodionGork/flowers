@@ -9,5 +9,6 @@ git commit -m "Auto update $t"
 echo $KKK_SECRET | base64 --decode >/tmp/flower.pri.gz
 gunzip /tmp/flower.pri.gz
 chmod 600 /tmp/flower.pri
+git remote set-url origin git@github.com:RodionGork/flowers.git
 GIT_SSH_COMMAND="ssh -i /tmp/flower.pri" git push --set-upstream origin gh-pages
 echo "Done!"
